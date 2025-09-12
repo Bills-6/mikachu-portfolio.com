@@ -1,10 +1,25 @@
+@media only screen and (width <= 320px) {
+	#list-nav * {
+		scale: 0.8 !important;
+	}
+}
+.text {
+	font-size: 1rem;
+	line-height: 1.78;
+	color: #242424;
+}
+/* medium */
+@media only screen and (width >= 48rem) {
+	.text {
+		font-size: 1.2rem;
+	}
+}
+/* large */
 @media only screen and (width >= 64rem) {
 	.icon-nav {
 		display: none !important;
 	}
-}
-@media only screen and (width <= 320px) {
-	#list-nav * {
-		scale: 0.8 !important;
+	.text {
+		line-height: 2.3;
 	}
 }
