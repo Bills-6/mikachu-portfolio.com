@@ -11,11 +11,11 @@
 	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="overflow-x-hidden">
-	<nav class="bg-pink-200 h-[70px]">
+	<nav class="h-[70px]">
 		<div class="container px-5 lg:px-7 mx-auto h-full flex items-center justify-between relative">
 			<a class="font-bold text-lg lg:text-[1.4rem]" href="#logos" id="logo">Mikachu</a>
 			
-			<ul class="absolute w-[90vw] h-dvh bg-zinc-900 top-0 right-0 shadow-md shadow-zinc-600 p-5 text-zinc-100
+			<ul class="absolute w-[90vw] h-dvh bg-zinc-900 top-0 right-[-200%] shadow-md shadow-zinc-600 p-5 text-zinc-100 transition-[right] z-5
 			
 			lg:static lg:h-fit lg:w-fit lg:flex lg:gap-5 lg:bg-[unset] lg:shadow-none lg:p-0 lg:text-zinc-900
 			" id="list-nav">
@@ -24,7 +24,9 @@
 						<i class="material-symbols-outlined">beach_access</i>
 						<a class="font-bold text-lg lg:text-[1.4rem]" href="#logos">Mikachu</a>
 					</div>
-					.
+					<span class="flex items-center justify-center  hover:cursor-pointer hover:scale-[1.1] transition-[scale]" title="close nav" role="button" id="close-nav-button">
+						<i class="material-symbols-outlined pointer-events-none">right_panel_close</i>
+					</span>
 				</div>
 
 				<li class="flex items-center gap-5 lg:block bg-zinc-800 p-5 rounded-md mb-5 hover:cursor-pointer hover:bg-zinc-700 lg:bg-[unset] lg:mb-0 lg:hover:bg-[unset]">
@@ -48,7 +50,17 @@
 					<span>News & Events</span>
 				</li>
 			</ul>
+
+			<a class="flex items-center justify-center border-1 border-zinc-900 w-[150px] h-[50px] rounded-[3rem] hover:bg-zinc-900 hover:text-zinc-100 hover:shadow-md shadow-zinc-900 font-bold me-auto ms-4 lg:ms-0 lg:me-[unset]" href="#register" id="register-button" role="button" aria-label="this register">register</a>
+
+			<div class="hamburger absolute right-[22px] top-[22px] flex flex-col justify-between w-[25px] h-[25px] hover:cursor-pointer lg:hidden z-1" id="open-nav-button">
+				<div class="bar w-full h-[2px] bg-zinc-900"></div>
+				<div class="bar w-full h-[2px] bg-zinc-900"></div>
+				<div class="bar w-full h-[2px] bg-zinc-900"></div>
+			</div>
 		</div>
 	</nav>
+
+	<script type="module" src="components/darkmode.js"></script>
 </body>
 </html>
