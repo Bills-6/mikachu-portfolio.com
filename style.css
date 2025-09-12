@@ -1,0 +1,10 @@
+@media only screen and (width >= 64rem) {
+	.icon-nav {
+		display: none !important;
+	}
+}
+@media only screen and (width < 40rem) {
+	#list-nav * {
+		scale: 0.8 !important;
+	}
+}
