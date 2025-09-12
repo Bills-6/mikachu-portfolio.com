@@ -3,7 +3,7 @@
 		display: none !important;
 	}
 }
-@media only screen and (width < 40rem) {
+@media only screen and (width <= 320px) {
 	#list-nav * {
 		scale: 0.8 !important;
 	}
